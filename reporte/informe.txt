@@ -1,0 +1,88 @@
+PRÁCTICA INDIVIDUAL N° 2
+FORMULACIÓN Y ANÁLISIS PRELIMINAR DE UN SISTEMA REAL
+
+1. NOMBRE DEL ESTUDIANTE
+Kevin Mauricio Espinoza Vera
+
+2. TÍTULO DEL CASO
+Análisis del tiempo de espera de clientes en una fila de atención al cliente de una tienda.
+
+3. FORMULACIÓN DEL PROBLEMA
+En una tienda con atención directa al cliente se puede formar una fila antes de recibir el servicio.
+El tiempo que cada cliente permanece esperando puede variar debido a la cantidad de personas en la fila,
+la rapidez del personal y situaciones particulares durante la atención.
+
+El problema de estudio consiste en analizar estadísticamente el tiempo de espera de los clientes para
+identificar su comportamiento general y determinar si existen tiempos excepcionalmente altos que puedan
+afectar la percepción del servicio.
+
+Para este ejercicio se utiliza un conjunto simulado de 30 observaciones, tal como permite la consigna.
+
+4. VARIABLE PRINCIPAL
+Variable: tiempo de espera del cliente.
+Tipo: cuantitativa continua.
+Unidad de medida: minutos.
+Interpretación: cantidad de minutos que transcurren desde que el cliente llega a la fila hasta que inicia su atención.
+
+5. SUPUESTOS
+- Los 30 datos representan observaciones independientes de clientes.
+- La unidad de medida es el minuto.
+- Los datos son simulados con fines académicos y representan una situación plausible de atención.
+- Se considera como valor atípico aquel cuyo valor absoluto de Z-Score sea mayor que 3.
+- Para varianza y desviación estándar se utiliza el cálculo muestral.
+- Un tiempo de espera elevado puede representar una situación excepcional del sistema de atención.
+
+6. ESTADÍSTICOS DESCRIPTIVOS
+Número de observaciones (n): 30
+Media: 6.55 minutos
+Mediana: 5.75 minutos
+Moda: No existe (todos los valores son diferentes)
+Mínimo: 3.80 minutos
+Máximo: 30.00 minutos
+Rango: 26.20 minutos
+Varianza muestral: 20.89 minutos²
+Desviación estándar muestral: 4.57 minutos
+
+7. VALORES ATÍPICOS (OUTLIERS) DETECTADOS CON Z-SCORE
+Criterio utilizado: |Z| > 3.
+
+Cliente 30: 30.00 min, Z-Score = 5.13
+
+El Z-Score se calculó mediante:
+Z = (x - media) / desviación estándar muestral
+
+8. ANÁLISIS DESCRIPTIVO DE LA VARIABLE
+Los tiempos de espera se concentran principalmente alrededor de 4 a 8 minutos.
+La media es de 6.55 minutos y la mediana es de 5.75 minutos.
+
+La diferencia entre media y mediana se debe principalmente a la presencia de un tiempo de espera
+considerablemente mayor que el resto de las observaciones. El mínimo observado es de 3.80 minutos
+y el máximo es de 30.00 minutos, por lo que el rango es de 26.20 minutos.
+
+La desviación estándar muestral es de 4.57 minutos, lo que refleja una dispersión influenciada
+por el valor extremo. La mayoría de las observaciones presentan tiempos relativamente cercanos entre sí,
+mientras que una observación presenta un comportamiento excepcional.
+
+9. INTERPRETACIÓN TÉCNICA
+El comportamiento habitual del sistema de atención se encuentra alrededor de 5 a 7 minutos por cliente.
+Sin embargo, se identifica un caso con un tiempo de espera muy superior al comportamiento general.
+
+El análisis mediante Z-Score permite distinguir este caso como un valor atípico cuando |Z| > 3.
+Desde el punto de vista del sistema, este tipo de observación podría estar relacionado con una congestión
+temporal, una atención excepcionalmente prolongada, una incidencia operativa o un incremento inusual de la fila.
+
+Por tanto, el valor atípico no debe eliminarse automáticamente: primero debe investigarse la causa que lo originó.
+
+10. CONCLUSIÓN
+A partir de las 30 observaciones analizadas, se concluye que el tiempo de espera habitual de los clientes
+se encuentra aproximadamente alrededor de 6.55 minutos, con una mediana de 5.75 minutos.
+
+El análisis estadístico permitió identificar un valor atípico mediante Z-Score, correspondiente a una espera
+de 30.00 minutos (Z = 5.13), si se aplica el criterio |Z| > 3.
+
+Técnicamente, el sistema presenta un comportamiento generalmente estable para la mayoría de los clientes,
+pero el caso extremo evidencia que pueden presentarse situaciones de congestión o demoras excepcionales.
+Se recomienda registrar posteriormente la causa de estos tiempos extremos para determinar si son hechos
+aislados o si existe un problema operativo recurrente.
+
+
